@@ -1,0 +1,285 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv"
+;
+
+/* Custom Styles for Refined Warm Dark Theme & Cards */
+.page__content p {
+  text-align: justify;
+}
+
+/* Compact list style for publications (default archive items outside the grid) */
+.archive__item {
+  .archive__item-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+
+    a {
+      color: var(--global-text-color) !important;
+      text-decoration: none !important;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--global-link-color-hover) !important;
+      }
+    }
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    line-height: 1.6;
+    margin-top: 4px;
+
+    p { margin: 0; }
+  }
+
+  .page__date {
+    display: none !important;
+  }
+}
+
+/* Card styles scoped only to the Projects grid */
+.projects-grid {
+  .archive__item {
+    background: var(--global-code-background-color) !important;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--global-border-color) !important;
+    margin-bottom: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    overflow: hidden;
+
+    .archive__item-teaser {
+      margin: -24px -24px 20px -24px;
+      border-radius: 12px 12px 0 0;
+      overflow: hidden;
+      height: 180px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: var(--global-dark-border-color) !important;
+      box-shadow: 0 12px 30px rgba(229, 192, 123, 0.15) !important;
+
+      .archive__item-teaser img {
+        transform: scale(1.05);
+      }
+
+      .archive__item-title a {
+        color: var(--global-link-color-hover) !important;
+      }
+    }
+
+    .archive__item-title {
+      margin-top: 0 !important;
+      margin-bottom: 8px !important;
+      font-size: 1.3rem;
+      font-weight: 600;
+
+      a {
+        color: #fff !important;
+        text-decoration: none !important;
+        transition: color 0.2s ease;
+      }
+    }
+
+    .archive__item-excerpt {
+      font-size: 0.95rem;
+      color: var(--global-text-color-light);
+      margin-top: 8px;
+      line-height: 1.6;
+      text-align: justify;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      p { margin: 0 0 12px 0; }
+
+      .tech-stack {
+        margin-top: auto;
+        padding-top: 16px;
+      }
+    }
+
+    .page__date {
+      display: none !important;
+    }
+  }
+}
+
+.page__content {
+  a.btn {
+    text-decoration: none !important;
+  }
+}
+
+/* Sidebar avatar styling */
+.author__avatar {
+  border-radius: 24px !important; /* Rounded square avatar */
+  border: 1px solid var(--global-border-color) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--global-dark-border-color) !important;
+    box-shadow: 0 12px 30px rgba(229, 192, 123, 0.15) !important;
+  }
+}
+
+/* Custom layout for tech-stack tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--global-border-color);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    border-color: var(--global-dark-border-color);
+    color: var(--global-link-color-hover);
+    background: rgba(229, 192, 123, 0.05);
+  }
+}
+
+/* Styling for advisor and supervisor project meta */
+.project-meta {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  margin-top: 0;
+  margin-bottom: 12px;
+  
+  a {
+    color: var(--global-link-color) !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    
+    &:hover {
+      text-decoration: underline !important;
+      color: var(--global-link-color-hover) !important;
+    }
+  }
+}
+
+/* Interactive Details/BibTeX dropdown */
+.bibtex-dropdown {
+  margin-top: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: 1px solid var(--global-border-color);
+  overflow: hidden;
+}
+
+.bibtex-dropdown summary {
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  user-select: none;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.bibtex-dropdown summary:hover {
+  color: var(--global-link-color-hover);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.bibtex-dropdown pre {
+  margin: 0;
+  padding: 15px;
+  font-size: 0.85rem;
+  color: #c6bdae;
+  overflow-x: auto;
+  border-top: 1px solid var(--global-border-color);
+}
+
+/* Projects Grid (2 Columns, stretched children) */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+
+  /* Override academicpages Susy float gallery on .grid__item */
+  .grid__item {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list__item {
+    width: 100% !important;
+    float: none !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
