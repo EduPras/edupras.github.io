@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<a href="/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size: 1rem; margin-bottom: 2em;">
+<a href="/pdfs/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size: 1rem; margin-bottom: 2em;">
   <i class="fa fa-download" aria-hidden="true"></i> View Full CV (PDF)
 </a>
 

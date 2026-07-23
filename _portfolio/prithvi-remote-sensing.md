@@ -11,7 +11,7 @@ excerpt: |
     <span class='tag'>Computer Vision</span>
   </div>
 collection: portfolio
-link: "https://colab.research.google.com/drive/1N_L8BvNGOO-bjx_p5xBRWljQ13pAAKmK?usp=sharing"
+link: "https://github.com/EduPras/araucaria-gfm"
 date: 2025-01-01
 ---
 
