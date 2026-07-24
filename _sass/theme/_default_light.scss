@@ -1,24 +1,24 @@
 /* ==========================================================================
-    DEFAULT THEME - REFINED WARM DARK VERSION
+    DEFAULT THEME - PREMIUM WARM LIGHT VERSION
     ========================================================================== */
 /* Color codes used for the theme */
-$primary-color              : #e5c07b;
-$gray                       : #a09890;
-$dark-gray                  : #e6e1db;
-$darker-gray                : #ffffff;
-$light-gray                 : #a09890;
-$lighter-gray               : rgba(255, 255, 255, 0.05);
+$primary-color              : #a6741c;
+$gray                       : #786d65;
+$dark-gray                  : #2c2520;
+$darker-gray                : #110e0d;
+$light-gray                 : #786d65;
+$lighter-gray               : rgba(0, 0, 0, 0.05);
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
-$info-color                 : #e5c07b;
-$notice-color               : #a09890;
-$success-color              : #62c462;
+$info-color                 : #a6741c;
+$notice-color               : #786d65;
+$success-color              : #27ae60;
 $warning-color              : #f89406;
 
 /* Other basic settings for the template */
 $border-radius              : 8px;
-$box-shadow                 : 0 4px 10px rgba(0, 0, 0, 0.3);
+$box-shadow                 : 0 4px 10px rgba(0, 0, 0, 0.05);
 $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 70px;
 $navicon-width              : 28px;
@@ -26,22 +26,22 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Default light theme overridden to be warm dark */
+/* Default light theme (white mode) styling variables */
 :root {
     --global-base-color                 : #{$primary-color};
-    --global-bg-color                   : #110e0d;
-    --global-footer-bg-color            : #110e0d;
-    --global-border-color               : rgba(255, 255, 255, 0.05);
-    --global-dark-border-color          : rgba(229, 192, 123, 0.2);
-    --global-code-background-color      : #1c1816;
-    --global-code-text-color            : #e6e1db;
-    --global-fig-caption-color          : #a09890;
-    --global-link-color                 : #e5c07b;
-    --global-link-color-hover           : #f5d08b;
-    --global-link-color-visited         : #e5c07b;  
-    --global-masthead-link-color        : #e6e1db;
-    --global-masthead-link-color-hover  : #e5c07b;    
-    --global-text-color                 : #e6e1db;
-    --global-text-color-light           : #a09890;
-    --global-thead-color                : #1c1816;
+    --global-bg-color                   : #ffffff;
+    --global-footer-bg-color            : #faf9f6;
+    --global-border-color               : rgba(44, 38, 33, 0.08);
+    --global-dark-border-color          : rgba(44, 38, 33, 0.16);
+    --global-code-background-color      : #f7f4ef;
+    --global-code-text-color            : #2c2520;
+    --global-fig-caption-color          : #786d65;
+    --global-link-color                 : #{$primary-color};
+    --global-link-color-hover           : #c08726;
+    --global-link-color-visited         : #{$primary-color};  
+    --global-masthead-link-color        : #2c2520;
+    --global-masthead-link-color-hover  : #{$primary-color};    
+    --global-text-color                 : #2c2520;
+    --global-text-color-light           : #786d65;
+    --global-thead-color                : #f1ede6;
 }

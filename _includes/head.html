@@ -10,6 +10,15 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function() {
+    var themeSetting = localStorage.getItem("theme");
+    var browserPref = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (themeSetting === "dark" || (themeSetting !== "light" && browserPref)) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+  })();
 </script>
 
 <!-- For all browsers -->

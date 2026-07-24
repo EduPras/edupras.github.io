@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Eduardo Prasniewski | Academic Profile"
 title_separator          : "-"
 name                     : &name "Eduardo Prasniewski"
-description              : &description "Eduardo Prasniewski — Computer Engineering graduate and Machine Learning Engineer. Research interests in Edge AI, Geospatial Foundation Models, and Transductive Graph Learning."
+description              : &description "Eduardo Prasniewski — Computer Engineering student (graduating late 2026) and Machine Learning Engineer. Research interests in Edge AI, Geospatial Foundation Models, and Transductive Graph Learning."
 url                      : https://edupras.github.io
 baseurl                  : ""
 repository               : "EduPras/edupras.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.jpeg"
   name             : "Eduardo Prasniewski"
   pronouns         : # example: "she/her"  
-  bio              : "Machine Learning Engineer & Computer Engineering Graduate"
+  bio              : "Machine Learning Engineer & Computer Engineering Student (graduating late 2026)"
   location         : "Paraná, Brazil"
   employer         : "CEIA-UFG"
   uri              : # URL
