@@ -16,5 +16,38 @@ My capstone project applied NASA and IBM's Prithvi-EO-2.0 foundation model to de
 ## Research Interests
 Edge AI · Foundation Models · Environmental Applications · Embedded Systems
 
+## Awards & Honors
+<div class="awards-list">
+  <div class="award-item">
+    <div class="award-logo">
+      <img src="{{ base_path }}/images/mitacs-logo.png" alt="Mitacs Logo">
+    </div>
+    <div class="award-info">
+      <p class="award-title">Mitacs Globalink Research Award (GRA) (2024, 2026)</p>
+      <p class="award-desc">Awarded twice for international research internships in Canada (Université Laval, 2026; INRS Montréal, 2024–2025).</p>
+    </div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-logo">
+      <img src="{{ base_path }}/images/araucaria-logo.png" alt="Fundação Araucária Logo">
+    </div>
+    <div class="award-info">
+      <p class="award-title">Araucária Foundation Scientific Initiation Scholarship (2022–2024)</p>
+      <p class="award-desc">Undergraduate research fellowship awarded by the Paraná state government for IoT infrastructure and scalability research.</p>
+    </div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-logo">
+      <img src="{{ base_path }}/images/obmep-logo.png" alt="OBMEP Logo">
+    </div>
+    <div class="award-info">
+      <p class="award-title">OBMEP Bronze Medal (2018)</p>
+      <p class="award-desc">Bronze medal winner in the national Brazilian Mathematics Olympiad for Public Schools.</p>
+    </div>
+  </div>
+</div>
+
 ## Languages
 Portuguese (Native) · English (Fluent) · French (Learning)
